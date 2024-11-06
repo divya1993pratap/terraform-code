@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    LOB: mypod1
+  name: anil-pod  
+  namespace: default
+spec:
+  containers:
+  - image: nginx
+    name: anil-container
+    ports:
+    - containerPort: 80
+  - image: linuxserver/firefox
+    name: anil-container1
+    ports:
+    - containerPort: 3000
